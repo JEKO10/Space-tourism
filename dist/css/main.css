@@ -58,21 +58,30 @@ nav div ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 0;
   font-weight: 300;
   text-transform: uppercase;
   margin-left: 5rem;
 }
 
 nav div li {
-  padding: 0 20px;
+  padding: 30px 0;
+  margin: 0 20px;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+nav div li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 nav div li span {
   font-weight: bold;
   padding-right: 5px;
+}
+
+.active {
+  border-bottom: 2px solid #fff;
 }
 
 .intro {
