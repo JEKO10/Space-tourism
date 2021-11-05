@@ -8,10 +8,10 @@
 
 body {
   background: #0b0d19 url("../../images/background-desktop.jpg") right top no-repeat;
+  color: #fff;
 }
 
 nav {
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
