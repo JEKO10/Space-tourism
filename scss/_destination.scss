@@ -6,6 +6,24 @@
 .destination {
   @include flex(space-evenly, flex-end);
 
+  ul {
+    @include flex(flex-start, center);
+    list-style-type: none;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    li {
+      margin: 0 30px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: $secondaryColor;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
   div:first-child {
     @include flex(space-between, start);
     flex-direction: column;
