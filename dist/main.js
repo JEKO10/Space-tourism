@@ -34,3 +34,40 @@ tech.addEventListener("click", (e) => {
   dest.classList.remove("active");
   crew.classList.remove("active");
 });
+
+const moon = document.querySelector("#moon");
+const mars = document.querySelector("#mars");
+const europa = document.querySelector("#europa");
+const titan = document.querySelector("#titan");
+
+moon.addEventListener("click", (e) => {
+  moon.className = "active";
+
+  mars.classList.remove("active");
+  europa.classList.remove("active");
+  titan.classList.remove("active");
+});
+
+mars.addEventListener("click", (e) => {
+  mars.className = "active";
+
+  moon.classList.remove("active");
+  europa.classList.remove("active");
+  titan.classList.remove("active");
+});
+
+europa.addEventListener("click", (e) => {
+  europa.className = "active";
+
+  moon.classList.remove("active");
+  mars.classList.remove("active");
+  titan.classList.remove("active");
+});
+
+titan.addEventListener("click", (e) => {
+  titan.className = "active";
+
+  moon.classList.remove("active");
+  mars.classList.remove("active");
+  europa.classList.remove("active");
+});
