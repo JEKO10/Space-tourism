@@ -6,13 +6,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: $primaryFont;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(space-between, center);
   padding: 50px 0 50px 50px;
 
   .underline {
@@ -23,18 +21,14 @@ nav {
   }
 
   div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
     background: rgba(151, 151, 155, 0.1);
     backdrop-filter: blur(20px);
     width: 850px;
 
     ul {
+      @include flex(space-between, center);
       list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       font-weight: 300;
       text-transform: uppercase;
       margin-left: 5rem;

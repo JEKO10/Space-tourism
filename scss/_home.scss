@@ -1,18 +1,15 @@
 #bodyHome {
-  background: #0b0d19 url("../../images/background-desktop.jpg") right top
-    no-repeat;
+  @include background("../../images/background-desktop.jpg", right);
   color: #fff;
 }
 
 .intro {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  @include flex(space-around, flex-end);
   margin-top: 10rem;
 
   div {
     h1 {
-      font-family: "Bellefair", serif;
+      font-family: $secondaryFont;
       font-size: 9.375rem;
       font-weight: 100;
       text-transform: uppercase;
@@ -39,7 +36,7 @@
   }
 
   button {
-    font-family: "Bellefair", serif;
+    font-family: $secondaryFont;
     font-size: 2rem;
     cursor: pointer;
     background-color: #fff;

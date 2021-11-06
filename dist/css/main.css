@@ -1,84 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Barlow Condensed", sans-serif;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 50px 0 50px 50px;
-}
-
-nav .underline {
-  background-color: rgba(151, 151, 155, 0.2);
-  width: 34vw;
-  height: 2px;
-  margin-left: -40rem;
-}
-
-nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(151, 151, 155, 0.1);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  width: 850px;
-}
-
-nav div ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-left: 5rem;
-}
-
-nav div li {
-  padding: 30px 0;
-  margin: 0 20px;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-nav div li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav div li span {
-  font-weight: bold;
-  padding-right: 5px;
-}
-
-.active {
-  border-bottom: 2px solid #fff;
-}
-
 #bodyHome {
   background: #0b0d19 url("../../images/background-desktop.jpg") right top no-repeat;
   color: #fff;
@@ -134,8 +53,8 @@ nav div li span {
   border: none;
 }
 
-#destBody {
-  background: #0b0d19 url("../../images/background-destination.jpg") right top no-repeat;
+#bodyDest {
+  background: #0b0d19 url("../../images/background-destination.jpg") left top no-repeat;
   color: #fff;
 }
 
@@ -184,7 +103,6 @@ nav div {
 }
 
 nav div ul {
-  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,6 +112,7 @@ nav div ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style-type: none;
   font-weight: 300;
   text-transform: uppercase;
   margin-left: 5rem;

@@ -1,5 +1,4 @@
-#destBody {
-  background: #0b0d19 url("../../images/background-destination.jpg") right top
-    no-repeat;
+#bodyDest {
+  @include background("../../images/background-destination.jpg", left);
   color: #fff;
 }
