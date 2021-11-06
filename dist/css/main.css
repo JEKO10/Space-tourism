@@ -58,6 +58,122 @@
   color: #fff;
 }
 
+.destination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.destination div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.destination div:first-child img {
+  height: 400px;
+}
+
+.destination div:first-child h1 {
+  font-weight: 100;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 4px;
+  padding: 20px 0 60px 0;
+}
+
+.destination div:first-child h1 span {
+  font-weight: bold;
+  font-weight: 600;
+  padding-right: 5px;
+  color: #d0d6f9;
+  opacity: 0.4;
+}
+
+.destination div:last-child h1 {
+  font-family: "Bellefair", serif;
+  font-size: 6rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.destination div:last-child p {
+  color: #d0d6f9;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  max-width: 450px;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.destination div:last-child .underline {
+  width: 100%;
+  height: 0.5px;
+  opacity: 0.4;
+  margin: 40px 0 25px;
+  background: #d0d6f9;
+}
+
+.destination div:last-child div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destination div:last-child div:last-child h3 {
+  font-weight: 300;
+  color: #d0d6f9;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.destination div:last-child div:last-child h2 {
+  font-weight: 300;
+  font-size: 2rem;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+.destination div:last-child div:last-child div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
