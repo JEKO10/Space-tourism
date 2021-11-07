@@ -1,0 +1,41 @@
+#bodyCrews {
+  @include background("../../images/background-crew.jpg", center);
+  background-size: cover;
+  color: #fff;
+}
+
+.crew {
+  & > h1 {
+    font-weight: 100;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+    padding: 20px 0 60px 0;
+
+    span {
+      font-weight: bold;
+      font-weight: 600;
+      padding-right: 5px;
+      color: $secondaryColor;
+      opacity: 0.4;
+    }
+  }
+
+  .dots {
+    margin-top: 50px;
+    height: 30px;
+    display: flex;
+
+    div {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #d2d8f9;
+      margin-right: 10px;
+      cursor: pointer;
+      opacity: 0.3;
+      transition: 0.25s ease-in;
+    }
+  }
+}
