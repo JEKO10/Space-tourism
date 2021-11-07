@@ -2,16 +2,19 @@
   @include background("../../images/background-crew.jpg", center);
   background-size: cover;
   color: #fff;
+  overflow-y: hidden;
 }
 
 .crew {
-  & > h1 {
+  @include flex(space-evenly, flex-start);
+
+  #title {
     font-weight: 100;
     font-size: 1.75rem;
     text-transform: uppercase;
     word-spacing: 5px;
     letter-spacing: 4px;
-    padding: 20px 0 60px 0;
+    padding: 20px 0 80px 0;
 
     span {
       font-weight: bold;
@@ -20,6 +23,32 @@
       color: $secondaryColor;
       opacity: 0.4;
     }
+  }
+
+  #job {
+    font-weight: 300;
+    font-size: 2rem;
+    font-family: $secondaryFont;
+    color: $secondaryColor;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  #name {
+    font-family: $secondaryFont;
+    font-size: 4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 30px 0;
+  }
+
+  p {
+    color: $secondaryColor;
+    opacity: 0.8;
+    font-size: 1.5rem;
+    max-width: 450px;
+    line-height: 2rem;
+    font-weight: 300;
   }
 
   .dots {
@@ -31,11 +60,19 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #d2d8f9;
+      background: $secondaryColor;
       margin-right: 10px;
       cursor: pointer;
       opacity: 0.3;
       transition: 0.25s ease-in;
+
+      &.current {
+        opacity: 1;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }
