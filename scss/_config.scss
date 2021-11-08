@@ -11,3 +11,9 @@ $secondaryFont: "Bellefair", serif;
 @mixin background($url, $position) {
   background: #0b0d19 url($url) $position top no-repeat;
 }
+
+@mixin mediaMedium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}

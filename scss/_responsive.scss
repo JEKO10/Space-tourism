@@ -1,0 +1,11 @@
+@include mediaMedium {
+  #bodyHome {
+    @include background("../../images/background-tablet.jpg", center);
+  }
+
+  .intro {
+    @include flex(space-around, center);
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
