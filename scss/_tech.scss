@@ -1,0 +1,33 @@
+#bodyTech {
+  @include background("../../images/background-technology.jpg", center);
+  background-size: cover;
+  color: #fff;
+}
+
+.tech {
+  #title {
+    font-weight: 100;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+    padding: 20px 0 80px 0;
+
+    span {
+      font-weight: bold;
+      font-weight: 600;
+      padding-right: 5px;
+      color: $secondaryColor;
+      opacity: 0.4;
+    }
+  }
+
+  p {
+    color: $secondaryColor;
+    opacity: 0.8;
+    font-size: 1.5rem;
+    max-width: 450px;
+    line-height: 2rem;
+    font-weight: 300;
+  }
+}
