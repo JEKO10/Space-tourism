@@ -11,7 +11,7 @@
     text-transform: uppercase;
     word-spacing: 5px;
     letter-spacing: 4px;
-    padding: 20px 0 80px 0;
+    padding: 20px 0 80px 150px;
 
     span {
       font-weight: bold;
@@ -25,9 +25,67 @@
   p {
     color: $secondaryColor;
     opacity: 0.8;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     max-width: 450px;
     line-height: 2rem;
     font-weight: 300;
+  }
+
+  & > div {
+    @include flex(space-between, flex-start);
+  }
+
+  .info {
+    @include flex(center, center);
+    padding-left: 150px;
+
+    ul {
+      list-style-type: none;
+      margin-right: 5rem;
+      margin-top: 2rem;
+
+      li {
+        width: 70px;
+        height: 70px;
+        border: 2px solid $secondaryColor;
+        font-family: $secondaryFont;
+        border-radius: 50%;
+        font-size: 2rem;
+        @include flex(center, center);
+        margin-bottom: 60px;
+        cursor: pointer;
+        transition: all 500ms ease;
+
+        &.current {
+          background-color: #fff;
+          color: #000;
+        }
+
+        &:hover:not(.current) {
+          background-color: #696969;
+        }
+      }
+    }
+
+    h1 {
+      font-family: $secondaryFont;
+      font-size: 3.5rem;
+      font-weight: 100;
+      text-transform: uppercase;
+      padding: 20px 0 40px 0;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      color: $secondaryColor;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+  }
+
+  #techImg {
+    height: 500px;
+    margin-top: -5rem;
   }
 }

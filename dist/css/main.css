@@ -302,7 +302,7 @@
   text-transform: uppercase;
   word-spacing: 5px;
   letter-spacing: 4px;
-  padding: 20px 0 80px 0;
+  padding: 20px 0 80px 150px;
 }
 
 .tech #title span {
@@ -316,10 +316,93 @@
 .tech p {
   color: #d0d6f9;
   opacity: 0.8;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   max-width: 450px;
   line-height: 2rem;
   font-weight: 300;
+}
+
+.tech > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.tech .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 150px;
+}
+
+.tech .info ul {
+  list-style-type: none;
+  margin-right: 5rem;
+  margin-top: 2rem;
+}
+
+.tech .info ul li {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #d0d6f9;
+  font-family: "Bellefair", serif;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.tech .info ul li.current {
+  background-color: #fff;
+  color: #000;
+}
+
+.tech .info ul li:hover:not(.current) {
+  background-color: #696969;
+}
+
+.tech .info h1 {
+  font-family: "Bellefair", serif;
+  font-size: 3.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 20px 0 40px 0;
+}
+
+.tech .info h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.tech #techImg {
+  height: 500px;
+  margin-top: -5rem;
 }
 
 * {
