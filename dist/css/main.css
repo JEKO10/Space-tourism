@@ -425,30 +425,7 @@ nav {
   padding: 50px 0 50px 50px;
 }
 
-nav .underline {
-  background-color: #97979b33;
-  width: 34vw;
-  height: 2px;
-  margin-left: -40rem;
-}
-
 nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(151, 151, 155, 0.1);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  width: 850px;
-}
-
-nav div ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,35 +435,60 @@ nav div ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: rgba(151, 151, 155, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 60%;
+}
+
+nav div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
-  font-weight: 300;
   text-transform: uppercase;
-  margin-left: 5rem;
+  width: 100%;
 }
 
 nav div ul li {
-  margin: 0 20px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
+  letter-spacing: 2.7px;
+}
+
+nav div ul li.active {
+  border-bottom: 3px solid #fff;
+}
+
+nav div ul li:hover:not(.active) {
+  border-bottom: 1px solid #bbbbbb;
 }
 
 nav div ul li a {
-  color: #fff;
+  color: #d0d6f9;
   text-decoration: none;
   display: block;
   padding: 30px 0;
 }
 
-nav div ul li a:hover {
-  border-bottom: 1px solid #bbbbbb;
-}
-
 nav div ul li span {
   font-weight: bold;
-  padding-right: 5px;
+  color: #fff;
 }
 
-.active {
-  border-bottom: 2px solid #fff;
+nav div::before {
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: #d0d6f9;
+  position: absolute;
+  right: 95%;
+  opacity: 0.2;
 }
 /*# sourceMappingURL=main.css.map */

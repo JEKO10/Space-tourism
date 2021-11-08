@@ -13,53 +13,55 @@
 
 nav {
   @include flex(space-between, center);
-  padding: 50px 0 50px 50px;
-
-  .underline {
-    background-color: #97979b33;
-    width: 34vw;
-    height: 2px;
-    margin-left: -40rem;
-  }
+  padding: 50px 0 50px 50px; // top right bottom left
 
   div {
-    @include flex(center, center);
+    @include flex(space-between, center);
     background: rgba(151, 151, 155, 0.1);
     backdrop-filter: blur(20px);
-    width: 850px;
+    width: 60%;
 
     ul {
-      @include flex(space-between, center);
+      @include flex(space-evenly, center);
       list-style-type: none;
-      font-weight: 300;
       text-transform: uppercase;
-      margin-left: 5rem;
+      width: 100%;
 
       li {
-        margin: 0 20px;
-        font-size: 1.5rem;
+        font-size: 1rem;
         cursor: pointer;
+        letter-spacing: 2.7px;
+
+        &.active {
+          border-bottom: 3px solid #fff;
+        }
+
+        &:hover:not(.active) {
+          border-bottom: 1px solid #bbbbbb;
+        }
 
         a {
-          color: #fff;
+          color: $secondaryColor;
           text-decoration: none;
           display: block;
           padding: 30px 0;
-
-          &:hover {
-            border-bottom: 1px solid #bbbbbb;
-          }
         }
 
         span {
           font-weight: bold;
-          padding-right: 5px;
+          color: #fff;
         }
       }
     }
-  }
-}
 
-.active {
-  border-bottom: 2px solid #fff;
+    &::before {
+      content: "";
+      width: 60%;
+      height: 1px;
+      background-color: $secondaryColor;
+      position: absolute;
+      right: 95%;
+      opacity: 0.2;
+    }
+  }
 }
