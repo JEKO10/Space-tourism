@@ -316,7 +316,7 @@
 .tech p {
   color: #d0d6f9;
   opacity: 0.8;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   max-width: 450px;
   line-height: 2rem;
   font-weight: 300;
@@ -349,8 +349,7 @@
 
 .tech .info ul {
   list-style-type: none;
-  margin-right: 5rem;
-  margin-top: 2rem;
+  margin-right: 4rem;
 }
 
 .tech .info ul li {
@@ -389,7 +388,7 @@
   font-size: 3.5rem;
   font-weight: 100;
   text-transform: uppercase;
-  padding: 20px 0 40px 0;
+  padding: 20px 0;
 }
 
 .tech .info h2 {
