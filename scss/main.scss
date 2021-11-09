@@ -16,7 +16,7 @@ nav {
   @include flex(space-between, center);
   padding: 50px 0 50px 50px; // top right bottom left
 
-  div {
+  div:first-of-type {
     @include flex(space-between, center);
     background: rgba(151, 151, 155, 0.1);
     backdrop-filter: blur(20px);
@@ -64,6 +64,62 @@ nav {
       position: absolute;
       right: 95%;
       opacity: 0.2;
+    }
+  }
+
+  .menuBtn {
+    position: absolute;
+    top: 2.5rem;
+    right: 60px;
+    z-index: 2;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    display: none;
+
+    .menuBurger {
+      position: absolute;
+      top: 0.5rem;
+      right: 0;
+      width: 24px;
+      height: 3px;
+      background: $secondaryColor;
+      transition: all 500ms ease-in-out;
+    }
+
+    .menuBurger::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background: $secondaryColor;
+      transition: all 500ms ease-in-out;
+    }
+
+    .menuBurger::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 20px;
+      height: 3px;
+      background: $secondaryColor;
+      transition: all 500ms ease-in-out;
+    }
+
+    .menuBurger.open {
+      transform: rotate(720deg);
+      background: transparent;
+    }
+
+    .menuBurger.open::before {
+      transform: rotate(45deg) translate(5px, 8px);
+    }
+
+    .menuBurger.open::after {
+      width: 28px;
+      transform: rotate(-45deg) translate(3px, -7px);
     }
   }
 }

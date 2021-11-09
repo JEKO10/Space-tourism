@@ -12,14 +12,20 @@ $secondaryFont: "Bellefair", serif;
   background: #0b0d19 url($url) $position top no-repeat;
 }
 
+@mixin mediaMediumLarge {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
 @mixin mediaMedium {
   @media screen and (max-width: 768px) {
     @content;
   }
 }
 
-@mixin mediaMediumLarge {
-  @media screen and (max-width: 992px) {
+@mixin mediaMediumLow {
+  @media screen and (max-width: 576px) {
     @content;
   }
 }

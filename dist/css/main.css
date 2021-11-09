@@ -412,7 +412,7 @@
   .nav {
     padding: 20px 0 20px 50px;
   }
-  .nav div {
+  .nav div:first-of-type {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -424,7 +424,7 @@
             align-items: center;
     width: 80%;
   }
-  .nav div::before {
+  .nav div:first-of-type::before {
     display: none;
   }
   .intro {
@@ -457,26 +457,35 @@
     margin-top: 5rem;
     text-align: center;
   }
-  .intro div {
+  .intro div:first-of-type {
     margin-bottom: 5rem;
   }
-  .intro div h2 {
+  .intro div:first-of-type h2 {
     font-size: 2rem;
   }
-  .intro div p {
+  .intro div:first-of-type p {
     max-width: 650px;
     padding: 0 20px;
     font-size: 1.5rem;
     line-height: 30px;
   }
   .nav {
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 20px 30px;
   }
   .nav img {
     padding-right: 30px;
   }
-  .nav div {
+  .nav div:first-of-type {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav div:first-of-type {
+    display: none;
+  }
+  .nav .menuBtn {
+    display: block;
   }
 }
 
@@ -501,7 +510,7 @@ nav {
   padding: 50px 0 50px 50px;
 }
 
-nav div {
+nav div:first-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,7 +526,7 @@ nav div {
   width: 60%;
 }
 
-nav div ul {
+nav div:first-of-type ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,34 +541,34 @@ nav div ul {
   width: 100%;
 }
 
-nav div ul li {
+nav div:first-of-type ul li {
   font-size: 1rem;
   cursor: pointer;
   letter-spacing: 2.7px;
 }
 
-nav div ul li.active {
+nav div:first-of-type ul li.active {
   border-bottom: 3px solid #fff;
   font-weight: 600;
 }
 
-nav div ul li:hover:not(.active) {
+nav div:first-of-type ul li:hover:not(.active) {
   border-bottom: 1px solid #bbbbbb;
 }
 
-nav div ul li a {
+nav div:first-of-type ul li a {
   color: #d0d6f9;
   text-decoration: none;
   display: block;
   padding: 30px 0;
 }
 
-nav div ul li span {
+nav div:first-of-type ul li span {
   font-weight: bold;
   color: #fff;
 }
 
-nav div::before {
+nav div:first-of-type::before {
   content: "";
   width: 60%;
   height: 1px;
@@ -567,5 +576,68 @@ nav div::before {
   position: absolute;
   right: 95%;
   opacity: 0.2;
+}
+
+nav .menuBtn {
+  position: absolute;
+  top: 2.5rem;
+  right: 60px;
+  z-index: 2;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  display: none;
+}
+
+nav .menuBtn .menuBurger {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  width: 24px;
+  height: 3px;
+  background: #d0d6f9;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+nav .menuBtn .menuBurger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: #d0d6f9;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+nav .menuBtn .menuBurger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: #d0d6f9;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+nav .menuBtn .menuBurger.open {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+  background: transparent;
+}
+
+nav .menuBtn .menuBurger.open::before {
+  -webkit-transform: rotate(45deg) translate(5px, 8px);
+          transform: rotate(45deg) translate(5px, 8px);
+}
+
+nav .menuBtn .menuBurger.open::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(3px, -7px);
+          transform: rotate(-45deg) translate(3px, -7px);
 }
 /*# sourceMappingURL=main.css.map */

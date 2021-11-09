@@ -6,7 +6,7 @@
   .nav {
     padding: 20px 0 20px 50px; // top right bottom left
 
-    div {
+    div:first-of-type {
       @include flex(space-evenly, center);
       width: 80%;
 
@@ -38,7 +38,7 @@
     margin-top: 5rem;
     text-align: center;
 
-    div {
+    div:first-of-type {
       margin-bottom: 5rem;
 
       h2 {
@@ -55,43 +55,30 @@
   }
 
   .nav {
-    padding: 20px 0 20px 20px; // top right bottom left
+    padding: 20px 0 20px 30px; // top right bottom left
 
     img {
       padding-right: 30px;
     }
 
-    div {
+    div:first-of-type {
       width: 90%;
-
-      // ul {
-      //   @include flex(space-evenly, center);
-      //   list-style-type: none;
-      //   text-transform: uppercase;
-      //   width: 100%;
-
-      //   li {
-      //     font-size: 1rem;
-      //     cursor: pointer;
-      //     letter-spacing: 2.7px;
-
-      //     &.active {
-      //       border-bottom: 3px solid #fff;
-      //       font-weight: 600;
-      //     }
-
-      //     &:hover:not(.active) {
-      //       border-bottom: 1px solid #bbbbbb;
-      //     }
-
-      //     a {
-      //       color: $secondaryColor;
-      //       text-decoration: none;
-      //       display: block;
-      //       padding: 30px 0;
-      //     }
-      // }
-      // }
     }
   }
 }
+
+@include mediaMediumLow {
+  .nav {
+    & div:first-of-type {
+      display: none;
+    }
+
+    .menuBtn {
+      display: block;
+    }
+  }
+}
+
+// #bodyHome {
+//     @include background("../../images/background-mobile.jpg", center);
+//   }
