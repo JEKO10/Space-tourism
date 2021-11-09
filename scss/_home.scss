@@ -6,6 +6,7 @@
 .intro {
   @include flex(space-around, flex-end);
   margin-top: 10rem;
+  margin-bottom: 5rem;
 
   div {
     h1 {

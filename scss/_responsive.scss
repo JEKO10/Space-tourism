@@ -1,3 +1,32 @@
+@include mediaMediumLarge {
+  .nav {
+    padding: 20px 0 20px 50px; // top right bottom left
+
+    div {
+      @include flex(space-evenly, center);
+      width: 80%;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  #bodyHome {
+    @include background("../../images/background-desktop.jpg", center);
+  }
+
+  .intro {
+    margin-top: 7rem;
+
+    button {
+      font-size: 2rem;
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
 @include mediaMedium {
   #bodyHome {
     @include background("../../images/background-tablet.jpg", center);

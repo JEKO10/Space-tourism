@@ -35,6 +35,7 @@ nav {
 
         &.active {
           border-bottom: 3px solid #fff;
+          font-weight: 600;
         }
 
         &:hover:not(.active) {
