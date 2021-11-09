@@ -1,4 +1,8 @@
 @include mediaMediumLarge {
+  #bodyHome {
+    @include background("../../images/background-desktop.jpg", center);
+  }
+
   .nav {
     padding: 20px 0 20px 50px; // top right bottom left
 
@@ -10,10 +14,6 @@
         display: none;
       }
     }
-  }
-
-  #bodyHome {
-    @include background("../../images/background-desktop.jpg", center);
   }
 
   .intro {
@@ -35,6 +35,63 @@
   .intro {
     @include flex(space-around, center);
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 5rem;
+    text-align: center;
+
+    div {
+      margin-bottom: 5rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        max-width: 650px;
+        padding: 0 20px;
+        font-size: 1.5rem;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .nav {
+    padding: 20px 0 20px 20px; // top right bottom left
+
+    img {
+      padding-right: 30px;
+    }
+
+    div {
+      width: 90%;
+
+      // ul {
+      //   @include flex(space-evenly, center);
+      //   list-style-type: none;
+      //   text-transform: uppercase;
+      //   width: 100%;
+
+      //   li {
+      //     font-size: 1rem;
+      //     cursor: pointer;
+      //     letter-spacing: 2.7px;
+
+      //     &.active {
+      //       border-bottom: 3px solid #fff;
+      //       font-weight: 600;
+      //     }
+
+      //     &:hover:not(.active) {
+      //       border-bottom: 1px solid #bbbbbb;
+      //     }
+
+      //     a {
+      //       color: $secondaryColor;
+      //       text-decoration: none;
+      //       display: block;
+      //       padding: 30px 0;
+      //     }
+      // }
+      // }
+    }
   }
 }

@@ -16,7 +16,7 @@
   margin-bottom: 5rem;
 }
 
-.intro div h1 {
+.intro h1 {
   font-family: "Bellefair", serif;
   font-size: 9.375rem;
   font-weight: 100;
@@ -24,7 +24,7 @@
   padding: 15px 0;
 }
 
-.intro div h2 {
+.intro h2 {
   text-transform: uppercase;
   font-weight: 400;
   color: #d0d6f9;
@@ -33,7 +33,7 @@
   letter-spacing: 2px;
 }
 
-.intro div p {
+.intro p {
   max-width: 450px;
   color: #d0d6f9;
   font-size: 1.125rem;
@@ -406,6 +406,9 @@
 }
 
 @media screen and (max-width: 992px) {
+  #bodyHome {
+    background: #0b0d19 url("../../images/background-desktop.jpg") center top no-repeat;
+  }
   .nav {
     padding: 20px 0 20px 50px;
   }
@@ -423,9 +426,6 @@
   }
   .nav div::before {
     display: none;
-  }
-  #bodyHome {
-    background: #0b0d19 url("../../images/background-desktop.jpg") center top no-repeat;
   }
   .intro {
     margin-top: 7rem;
@@ -454,7 +454,29 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 0;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .intro div {
+    margin-bottom: 5rem;
+  }
+  .intro div h2 {
+    font-size: 2rem;
+  }
+  .intro div p {
+    max-width: 650px;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .nav {
+    padding: 20px 0 20px 20px;
+  }
+  .nav img {
+    padding-right: 30px;
+  }
+  .nav div {
+    width: 90%;
   }
 }
 
