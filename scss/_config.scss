@@ -1,4 +1,5 @@
-$secondaryColor: #d0d6f9;
+$secondaryColor: #0b0d19;
+$primaryColor: #d0d6f9;
 $primaryFont: "Barlow Condensed", sans-serif;
 $secondaryFont: "Bellefair", serif;
 
@@ -9,7 +10,7 @@ $secondaryFont: "Bellefair", serif;
 }
 
 @mixin background($url, $position) {
-  background: #0b0d19 url($url) $position top no-repeat;
+  background: $secondaryColor url($url) $position top no-repeat;
 }
 
 @mixin mediaMediumLarge {

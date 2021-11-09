@@ -71,12 +71,42 @@
   .nav {
     padding: 30px 0 20px 30px; // top right bottom left
 
-    & div:first-of-type {
-      display: none;
-    }
-
     .menuBtn {
       display: block;
+    }
+
+    div:first-of-type {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: $secondaryColor;
+      color: $primaryColor;
+      opacity: 0.9;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        li {
+          margin: 20px 0;
+          font-size: 2rem;
+
+          a {
+            padding: 0;
+          }
+        }
+      }
+
+      &.show {
+        display: block;
+      }
     }
   }
 }

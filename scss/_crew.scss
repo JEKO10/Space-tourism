@@ -20,7 +20,7 @@
       font-weight: bold;
       font-weight: 600;
       padding-right: 5px;
-      color: $secondaryColor;
+      color: $primaryColor;
       opacity: 0.4;
     }
   }
@@ -29,7 +29,7 @@
     font-weight: 300;
     font-size: 2rem;
     font-family: $secondaryFont;
-    color: $secondaryColor;
+    color: $primaryColor;
     text-transform: uppercase;
     opacity: 0.6;
   }
@@ -43,7 +43,7 @@
   }
 
   p {
-    color: $secondaryColor;
+    color: $primaryColor;
     opacity: 0.8;
     font-size: 1.5rem;
     max-width: 450px;
@@ -60,7 +60,7 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: $secondaryColor;
+      background: $primaryColor;
       margin-right: 10px;
       cursor: pointer;
       opacity: 0.3;

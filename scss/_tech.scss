@@ -17,13 +17,13 @@
       font-weight: bold;
       font-weight: 600;
       padding-right: 5px;
-      color: $secondaryColor;
+      color: $primaryColor;
       opacity: 0.4;
     }
   }
 
   p {
-    color: $secondaryColor;
+    color: $primaryColor;
     opacity: 0.8;
     font-size: 1.5rem;
     max-width: 450px;
@@ -46,7 +46,7 @@
       li {
         width: 70px;
         height: 70px;
-        border: 2px solid $secondaryColor;
+        border: 2px solid $primaryColor;
         font-family: $secondaryFont;
         border-radius: 50%;
         font-size: 2rem;
@@ -77,7 +77,7 @@
     h2 {
       font-size: 1rem;
       font-weight: 300;
-      color: $secondaryColor;
+      color: $primaryColor;
       text-transform: uppercase;
       letter-spacing: 4px;
     }
