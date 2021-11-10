@@ -5,13 +5,15 @@
 }
 
 .tech {
+  margin-bottom: 5rem;
+
   #title {
     font-weight: 100;
     font-size: 1.75rem;
     text-transform: uppercase;
     word-spacing: 5px;
     letter-spacing: 4px;
-    padding: 20px 0 80px 150px;
+    padding: 20px 0 80px 50px;
 
     span {
       font-weight: bold;
@@ -22,22 +24,13 @@
     }
   }
 
-  p {
-    color: $primaryColor;
-    opacity: 0.8;
-    font-size: 1.5rem;
-    max-width: 450px;
-    line-height: 2rem;
-    font-weight: 300;
-  }
-
   & > div {
     @include flex(space-between, flex-start);
   }
 
   .info {
     @include flex(center, center);
-    padding-left: 150px;
+    padding-left: 50px;
 
     ul {
       list-style-type: none;
@@ -80,6 +73,15 @@
       color: $primaryColor;
       text-transform: uppercase;
       letter-spacing: 4px;
+    }
+
+    p {
+      color: $primaryColor;
+      opacity: 0.8;
+      font-size: 1.5rem;
+      max-width: 450px;
+      line-height: 2rem;
+      font-weight: 300;
     }
   }
 
