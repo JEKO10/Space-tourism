@@ -65,25 +65,23 @@
   }
 
   .tech {
-    padding: 0 30px;
-
     & > div {
       @include flex(center, center);
       flex-direction: column-reverse;
     }
 
     #title {
-      padding: 20px 0 40px 0;
+      padding: 20px 0 50px 50px;
     }
 
     #techImg {
       height: 450px;
-      width: 85%;
+      width: 80%;
       margin-bottom: 5rem;
     }
 
     .info {
-      padding-left: 0;
+      padding: 0 30px; // brisi
       flex-direction: column;
 
       ul {
@@ -208,6 +206,17 @@
       }
     }
   }
+
+  .tech {
+    #title {
+      padding: 20px 0 50px 30px;
+    }
+
+    #techImg {
+      height: auto;
+      width: 95%;
+    }
+  }
 }
 
 @include mediaSmall {
@@ -264,6 +273,37 @@
         h2 {
           font-size: 1.5rem;
         }
+      }
+    }
+  }
+
+  .tech {
+    #title {
+      padding: 20px 0 55px 15px;
+    }
+
+    #techImg {
+      margin-bottom: 3rem;
+    }
+
+    .info {
+      ul {
+        li {
+          width: 60px;
+          height: 60px;
+          font-size: 1.5rem;
+          margin-bottom: 30px;
+        }
+      }
+
+      h1 {
+        font-size: 3rem;
+        padding: 20px 0;
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 2rem;
       }
     }
   }

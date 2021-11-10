@@ -501,9 +501,6 @@
     line-height: 2rem;
     font-weight: 300;
   }
-  .tech {
-    padding: 0 30px;
-  }
   .tech > div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -520,15 +517,15 @@
             flex-direction: column-reverse;
   }
   .tech #title {
-    padding: 20px 0 40px 0;
+    padding: 20px 0 50px 50px;
   }
   .tech #techImg {
     height: 450px;
-    width: 85%;
+    width: 80%;
     margin-bottom: 5rem;
   }
   .tech .info {
-    padding-left: 0;
+    padding: 0 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -661,6 +658,13 @@
   .destination div:last-child p {
     font-size: 1.5rem;
   }
+  .tech #title {
+    padding: 20px 0 50px 30px;
+  }
+  .tech #techImg {
+    height: auto;
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -717,6 +721,26 @@
   }
   .destination div:last-child div:last-child h2 {
     font-size: 1.5rem;
+  }
+  .tech #title {
+    padding: 20px 0 55px 15px;
+  }
+  .tech #techImg {
+    margin-bottom: 3rem;
+  }
+  .tech .info ul li {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .tech .info h1 {
+    font-size: 3rem;
+    padding: 20px 0;
+  }
+  .tech .info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
