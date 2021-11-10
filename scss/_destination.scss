@@ -5,6 +5,7 @@
 
 .destination {
   @include flex(space-evenly, flex-end);
+  margin-bottom: 4rem;
 
   ul {
     @include flex(flex-start, center);

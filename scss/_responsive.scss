@@ -25,6 +25,34 @@
       height: 200px;
     }
   }
+
+  .destination {
+    @include flex(space-evenly, center);
+    flex-direction: column;
+    margin-top: 3rem;
+
+    ul {
+      @include flex(center, center);
+    }
+
+    div:first-child:not(.avg) {
+      margin-bottom: 5rem;
+    }
+
+    div:last-child {
+      text-align: center;
+      h1 {
+        font-size: 10rem;
+      }
+
+      p {
+        font-size: 2rem;
+        max-width: 600px;
+        line-height: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
 }
 
 @include mediaMedium {

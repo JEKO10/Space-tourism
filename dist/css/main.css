@@ -76,6 +76,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-bottom: 4rem;
 }
 
 .destination ul {
@@ -445,6 +446,48 @@
     font-size: 2rem;
     width: 200px;
     height: 200px;
+  }
+  .destination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3rem;
+  }
+  .destination ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .destination div:first-child:not(.avg) {
+    margin-bottom: 5rem;
+  }
+  .destination div:last-child {
+    text-align: center;
+  }
+  .destination div:last-child h1 {
+    font-size: 10rem;
+  }
+  .destination div:last-child p {
+    font-size: 2rem;
+    max-width: 600px;
+    line-height: 2rem;
+    font-weight: 300;
   }
 }
 
