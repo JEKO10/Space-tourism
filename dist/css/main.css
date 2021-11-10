@@ -118,7 +118,7 @@
           justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -462,6 +462,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 3rem;
+    padding: 0 30px;
   }
   .destination ul {
     display: -webkit-box;
@@ -579,6 +580,19 @@
   .nav div:first-of-type.show {
     display: block;
   }
+  .destination {
+    margin-top: 0;
+  }
+  .destination div:last-child {
+    text-align: center;
+  }
+  .destination div:last-child h1 {
+    font-size: 6rem;
+    padding: 20px 0;
+  }
+  .destination div:last-child p {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -597,6 +611,44 @@
     max-width: 450px;
     font-size: 1.125rem;
     line-height: 25px;
+  }
+  .destination ul li {
+    margin: 0 10px;
+  }
+  .destination #planetImg {
+    height: 250px;
+  }
+  .destination div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .destination div:first-child h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .destination div:last-child h1 {
+    font-size: 4rem;
+  }
+  .destination div:last-child div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .destination div:last-child div:last-child h2 {
+    font-size: 1.5rem;
   }
 }
 

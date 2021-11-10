@@ -30,7 +30,7 @@
   }
 
   div:first-child {
-    @include flex(space-between, start);
+    @include flex(space-between, flex-start);
     flex-direction: column;
 
     img {

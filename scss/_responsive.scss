@@ -30,6 +30,7 @@
     @include flex(space-evenly, center);
     flex-direction: column;
     margin-top: 3rem;
+    padding: 0 30px;
 
     ul {
       @include flex(center, center);
@@ -137,6 +138,22 @@
       }
     }
   }
+
+  .destination {
+    margin-top: 0;
+
+    div:last-child {
+      text-align: center;
+      h1 {
+        font-size: 6rem;
+        padding: 20px 0;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 
 @include mediaSmall {
@@ -158,6 +175,41 @@
         max-width: 450px;
         font-size: 1.125rem;
         line-height: 25px;
+      }
+    }
+  }
+
+  .destination {
+    ul {
+      li {
+        margin: 0 10px;
+      }
+    }
+
+    #planetImg {
+      height: 250px;
+    }
+
+    div:first-child {
+      @include flex(space-between, center);
+
+      h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+      }
+    }
+
+    div:last-child {
+      h1 {
+        font-size: 4rem;
+      }
+
+      & div:last-child {
+        @include flex(space-between, flex-start);
+
+        h2 {
+          font-size: 1.5rem;
+        }
       }
     }
   }
