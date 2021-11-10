@@ -52,6 +52,13 @@
   height: 250px;
   border-radius: 50%;
   border: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.intro button:hover {
+  background-color: #0b0d19;
+  color: #d0d6f9;
 }
 
 #bodyDest {

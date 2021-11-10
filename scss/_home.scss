@@ -44,5 +44,11 @@
     height: 250px;
     border-radius: 50%;
     border: none;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: $secondaryColor;
+      color: $primaryColor;
+    }
   }
 }
