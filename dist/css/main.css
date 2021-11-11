@@ -217,7 +217,6 @@
   background: #0b0d19 url("../../images/background-crew.jpg") center top no-repeat;
   background-size: cover;
   color: #fff;
-  overflow-y: hidden;
 }
 
 .crew {
@@ -230,6 +229,10 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.crew > div {
+  padding: 0 50px;
 }
 
 .crew #title {
@@ -273,6 +276,12 @@
   max-width: 450px;
   line-height: 2rem;
   font-weight: 300;
+  margin: 0 auto;
+}
+
+.crew #crewImg {
+  height: 635px;
+  padding: 0 50px;
 }
 
 .crew .dots {
@@ -425,6 +434,42 @@
   .tech #techImg {
     height: 300px;
     margin-top: 0;
+  }
+  .crew {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .crew > div {
+    margin-bottom: 2rem;
+  }
+  .crew p {
+    max-width: 600px;
+  }
+  .crew #crewImg {
+    height: 500px;
+  }
+  .crew .dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

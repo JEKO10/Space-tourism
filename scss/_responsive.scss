@@ -5,6 +5,28 @@
       margin-top: 0;
     }
   }
+
+  .crew {
+    @include flex(center, center);
+    flex-direction: column;
+    text-align: center;
+
+    & > div {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      max-width: 600px;
+    }
+
+    #crewImg {
+      height: 500px;
+    }
+
+    .dots {
+      @include flex(center, center);
+    }
+  }
 }
 
 @include mediaMediumLarge {
