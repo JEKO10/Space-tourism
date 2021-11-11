@@ -276,7 +276,6 @@
   max-width: 450px;
   line-height: 2rem;
   font-weight: 300;
-  margin: 0 auto;
 }
 
 .crew #crewImg {
@@ -710,6 +709,9 @@
     height: auto;
     width: 95%;
   }
+  .crew #crewImg {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -786,6 +788,16 @@
   .tech .info p {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+  .crew #name {
+    font-size: 2rem;
+  }
+  .crew > div {
+    padding: 0 20px;
+  }
+  .crew #crewImg {
+    height: 280px;
+    padding: 0 20px;
   }
 }
 

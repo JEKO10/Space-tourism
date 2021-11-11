@@ -239,6 +239,12 @@
       width: 95%;
     }
   }
+
+  .crew {
+    #crewImg {
+      height: 400px;
+    }
+  }
 }
 
 @include mediaSmall {
@@ -327,6 +333,21 @@
         font-size: 1.5rem;
         line-height: 2rem;
       }
+    }
+  }
+
+  .crew {
+    #name {
+      font-size: 2rem;
+    }
+
+    & > div {
+      padding: 0 20px;
+    }
+
+    #crewImg {
+      height: 280px;
+      padding: 0 20px;
     }
   }
 }
