@@ -26,7 +26,7 @@ The home page displays a background image of our beautiful Earth, some text, and
 ## Built with
 
 - HTML
-- CSS
+- Sass
 - JavaScript
 
 ## Live preview
