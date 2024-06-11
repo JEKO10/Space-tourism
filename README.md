@@ -8,6 +8,7 @@
 - [Project task](#project-task)
 - [Project overview](#project-overview)
 - [Built with](#built-with)
+- [Lighthouse Score](#lighthouse-score)
 - [Live preview](#live-preview)
 
 ## Project task
@@ -28,6 +29,19 @@ The home page displays a background image of our beautiful Earth, some text, and
 - HTML
 - Sass
 - JavaScript
+
+## Lighthouse Score
+
+![Lighthouse Score](https://github.com/JEKO10/Space-tourism/assets/84730554/078c29cd-7ec1-49dd-9a0a-c9afe15a0429)
+
+- **Performance**: 99
+- **Accessibility**: 100
+- **Best Practices**: 100
+- **SEO**: 90
+
+*Last updated: 6/10/2024*
+
+I continuously strive to maintain and improve these scores with each update.
 
 ## Live preview
 
